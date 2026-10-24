@@ -11,6 +11,7 @@ const repo = 'https://github.com/zwzwd723-ops/ulab-ui';
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const main = document.querySelector('#main'), sidebar = document.querySelector('#sidebar'), search = document.querySelector('#search');
 let dispose = () => {}, disposeBusiness = () => {}, noticeTimer, previewMode = 'preview', previewWidth = 'desktop';
+const mobileNavigation = window.matchMedia?.('(max-width:850px)');
 const footer = () => '<footer class="page-footer"><span>ULAB UI · 基于 ULAB 网站实际组件整理</span><a href="'+sourceRepository+'" target="_blank" rel="noopener">查看主站仓库 ↗</a></footer>';
 const header = (title, description, crumb='组件库') => '<header class="page-header"><div class="crumb">'+esc(crumb)+'</div><h1>'+esc(title)+'</h1><p>'+esc(description)+'</p></header>';
 const codeBlock = (code,label='HTML') => '<div class="code-surface"><div class="code-head"><span>'+label+'</span><button class="copy-button" data-copy-code>复制代码</button></div><pre><code>'+esc(code)+'</code></pre></div>';
@@ -25,8 +26,14 @@ async function copy(text) {
   }
 }
 function setMenu(open) {
+  const mobile = mobileNavigation?.matches ?? window.innerWidth <= 850;
+  open = open && mobile;
+  const toggle = document.querySelector('#menu-toggle');
+  if (!open && sidebar.contains(document.activeElement)) toggle.focus();
   sidebar.classList.toggle('is-open',open);document.querySelector('.sidebar-backdrop').hidden=!open;
-  document.querySelector('#menu-toggle').setAttribute('aria-expanded',String(open));
+  sidebar.inert = mobile && !open; main.inert = open;
+  document.body.style.overflow = open ? 'hidden' : '';
+  toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'关闭组件目录':'打开组件目录');
   if(open) sidebar.querySelector('a')?.focus();
 }
 function renderSidebar(route) {
@@ -139,4 +146,6 @@ document.addEventListener('click',event=>{
 });
 window.addEventListener('hashchange',()=>{search.value='';render();window.scrollTo({top:0,behavior:'instant'});main.focus({preventScroll:true})});
 window.addEventListener('message',event=>{const frame=main.querySelector('#entry-frame');if(!frame||event.source!==frame.contentWindow)return;const data=event.data;if(data?.type==='ulab-ui:height'&&Number.isFinite(data.height))frame.style.height=Math.min(2200,Math.max(200,data.height))+'px';if(data?.type==='ulab-ui:notice'&&typeof data.message==='string')notify(data.message)});
+mobileNavigation?.addEventListener('change',()=>setMenu(false));
 render();
+setMenu(false);
