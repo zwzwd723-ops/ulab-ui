@@ -1,0 +1,64 @@
+/* ULAB UI · semantic tokens. The host owns page layout and theme persistence. */
+:root {
+  color-scheme: light;
+  --u-font: 'Noto Sans SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --u-bg: #f4f4f5;
+  --u-surface: #fff;
+  --u-surface-soft: #f6f6f7;
+  --u-surface-hover: #ededee;
+  --u-ink: #202124;
+  --u-muted: #72747b;
+  --u-line: #dedfe3;
+  --u-line-strong: #a2a5ab;
+  --u-action: #202124;
+  --u-on-action: #fff;
+  --u-switch-on: #26854c;
+  --u-switch-off: #aeb2ba;
+  --u-danger: #b13d42;
+  --u-danger-soft: #fff3f3;
+  --u-warning: #88652f;
+  --u-warning-soft: #fbf6eb;
+  --u-success: #3e6650;
+  --u-success-soft: #f0f6f2;
+  --u-focus: #676c75;
+  --u-radius-sm: 8px;
+  --u-radius-md: 12px;
+  --u-radius-lg: 18px;
+  --u-radius-pill: 999px;
+  --u-shadow: 0 16px 48px #20212412;
+  --u-space-1: 4px;
+  --u-space-2: 8px;
+  --u-space-3: 12px;
+  --u-space-4: 16px;
+  --u-space-5: 24px;
+  --u-space-6: 32px;
+  --u-space-7: 48px;
+  --u-control-height: 44px;
+  --u-control-sm: 36px;
+  --u-control-lg: 52px;
+  --u-motion: 180ms;
+  --u-ease: cubic-bezier(.2,.7,.2,1);
+}
+html[data-theme='dark'] {
+  color-scheme: dark;
+  --u-bg: #1f2125;
+  --u-surface: #292c31;
+  --u-surface-soft: #32363c;
+  --u-surface-hover: #3d424a;
+  --u-ink: #f0f1f3;
+  --u-muted: #adb1ba;
+  --u-line: #454b54;
+  --u-line-strong: #818994;
+  --u-action: #f0f1f3;
+  --u-on-action: #202124;
+  --u-switch-on: #319e5b;
+  --u-switch-off: #626a76;
+  --u-danger: #f2a1a4;
+  --u-danger-soft: #412c31;
+  --u-warning: #e2c591;
+  --u-warning-soft: #39342b;
+  --u-success: #aec9b8;
+  --u-success-soft: #2b3831;
+  --u-focus: #bdc4cf;
+  --u-shadow: 0 16px 48px #0003;
+}

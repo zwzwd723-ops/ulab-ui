@@ -1,0 +1,9 @@
+{
+  "name": "ulab-ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ULAB website component library and interactive documentation",
+  "scripts": { "start": "node serve.cjs" },
+  "repository": { "type": "git", "url": "https://github.com/zwzwd723-ops/ulab-ui.git" }
+}

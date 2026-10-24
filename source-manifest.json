@@ -1,0 +1,123 @@
+{
+  "name": "ULAB UI",
+  "version": "1.0.0",
+  "createdAt": "2026-10-24T10:11:14.862Z",
+  "originRepository": "https://github.com/zwzwd723-ops/ulabshop",
+  "originPublishedCommit": "a116e55996f1c64838d8d44e51e2d8c2da2d12d2",
+  "components": 31,
+  "foundationStrategy": "tokens.css, components.css, icons.js copied unchanged; business patterns extracted and scoped; isolated demonstration runtime",
+  "files": [
+    {
+      "file": "assets/ui/tokens.css",
+      "sha256": "e87b4b0e8d91c90cdb1da78c4bff5def93f21617664836d82fdafdaab79fb172"
+    },
+    {
+      "file": "assets/ui/components.css",
+      "sha256": "849aee7599c3d4c75e9efac1ac06d40cb242161ba6986761e2751bba8da1d5e9"
+    },
+    {
+      "file": "assets/js/lab-icons.js",
+      "sha256": "11aafcbf6397a91b047ad6ce2c67f94ef34c054558700eb05c652f2dc1d5f4fd"
+    },
+    {
+      "file": "assets/images/468_83.png",
+      "sha256": "ed6f897a47cf0920cfc89e1e5e652f61e36b68078952a1f5d648deafb79ed430"
+    },
+    {
+      "file": "assets/images/1023_881.png",
+      "sha256": "3493155100f653d70ebf81e9b48760ada776fd86345a92cfa2f1de09482bc003"
+    },
+    {
+      "file": "assets/js/store-product-card.js",
+      "sha256": "83df8edb8dc3619f9733b820ba02e53bb2a877eb9f0007c1f66dfffe261087a7"
+    },
+    {
+      "file": "assets/css/store-product-card.css",
+      "sha256": "aeaf9c814c508c7263d8630c0549f2f855b9f92bce69873f865a61515a7f979e"
+    },
+    {
+      "file": "assets/js/uq71-options.js",
+      "sha256": "00fa7164ab27f0d27fe100e1fa288a377668ea59a4d865ab913efcbfc636544e"
+    },
+    {
+      "file": "assets/css/uq71-selection.css",
+      "sha256": "88cf917baf3d9aef53288a83ebe226adf833af9686a4295fe0fdd9d30c53825b"
+    },
+    {
+      "file": "assets/js/cart-drawer.js",
+      "sha256": "3b7c2083e970f55fe5e9aa56b7ed5b98f4d08597eba27523d70e1bc8dcdcdbd1"
+    },
+    {
+      "file": "assets/css/cart-drawer.css",
+      "sha256": "181abee3cec91bc540125a0da61989037dbb6b1e7ed75534e498da2d2fa5a5b7"
+    },
+    {
+      "file": "assets/css/checkout-components.css",
+      "sha256": "58aee08422a75067e2d430aad9416d0c6c8ee40c4e72b69ac7ac0e3ee9be69dd"
+    },
+    {
+      "file": "assets/js/checkout-model.js",
+      "sha256": "a9757bd197c6082f0b2a3a548617ee7ac646c6124cd5ec4e23dc233133717301"
+    },
+    {
+      "file": "assets/css/order-items.css",
+      "sha256": "fa0c6ddfe4d61683b6895dc0b19b42d15ea545c3c64c9ebe0d2a407e79e7209d"
+    },
+    {
+      "file": "assets/js/platform-commerce.js",
+      "sha256": "b4eee025ad536b7a59ae81cd3f5cad6ce2483aea02fbbe47233d79f12983d47b"
+    },
+    {
+      "file": "assets/js/platform-account.js",
+      "sha256": "9f0bfaebbb713f2aaf98ca5bb41ecff36157403a05cbf74dac2a5e2cbe5a1ba8"
+    },
+    {
+      "file": "assets/js/platform-account.css",
+      "sha256": "97a254acc42fb7619295abe824fef05273f4b09b62306fe17cf6d692d02bc44f"
+    },
+    {
+      "file": "assets/js/lab-navigation.js",
+      "sha256": "08b53eeed4a49b54c496b67c8711eeb740a2b0d498e4d142e6137b5171c6335f"
+    },
+    {
+      "file": "assets/js/lab-dock-steps.js",
+      "sha256": "9c17964e55ffac5a817046e0f947157e547eff5441e9f68761060930969da731"
+    },
+    {
+      "file": "assets/js/lab-model-loading.js",
+      "sha256": "04d445d4f9204ea8c7d89df586c046c9d1466c5fd77ab1622d64b9582f31a7f8"
+    },
+    {
+      "file": "assets/css/lab-model-loading.css",
+      "sha256": "f7228e58e74f965a21b7e25323ae21a36c87aabfa06bb4a9d95571252265d7fc"
+    },
+    {
+      "file": "supplier/dictionary-fields.js",
+      "sha256": "809e5edd7db222e9efdf4a25d9d164870088f6c33ff9efcc652eac615ce377ff"
+    },
+    {
+      "file": "supplier/dictionary-form.js",
+      "sha256": "b2efabf7f8ef4965e47e9c994438f123c4f0be3c45fb7e36b2d21174c4a4a2a6"
+    },
+    {
+      "file": "supplier/dictionary.js",
+      "sha256": "e21e8f9aee23e5cfb19da18a8548f096eaa3b036a360e9368e0eac54c367d598"
+    },
+    {
+      "file": "supplier/schema.js",
+      "sha256": "6c159fd677c9e644803f773446860ec9b4447e0291b4855c18ced5cfc3e40f6c"
+    },
+    {
+      "file": "supplier/selection-form.js",
+      "sha256": "663148dd0cfea7863253ab5c2ab08a0a52932152c42135f9de257a519c641aff"
+    },
+    {
+      "file": "assets/js/site-menu.js",
+      "sha256": "c4ce0983e03ab4d0ac21f927d2891d02b76160e23764f2188429ecb040c29839"
+    },
+    {
+      "file": "assets/css/site-menu.css",
+      "sha256": "331a16e187ec6b53daab73d9fb0fb92d3129b20d5265a919ba20a1510421df96"
+    }
+  ]
+}
